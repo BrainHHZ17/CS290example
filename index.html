@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content=""/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!--webfonts-->
+    <link href='http://fonts.useso.com/css?family=Fugaz+One|Raleway:400,100,200,300,500,600,700,800,900'
+          rel='stylesheet' type='text/css'>
+    <!--//webfonts-->
+</head>
+<body>
+<!--start-home-->
+<br>
+<div id="home" class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="head-nav">
+                <div class="logo">
+                    <a href="index.html"><h1>CBA<span>Team</span></h1></a>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="clearfix"></div>
+                <span class="menu"></span>
+                <div class="top-menu">
+                    <ul>
+                        <li class="active"><a class="color1" href="index.html">Home</a></li>
+                        <li><a class="color2" href="team.html">Team</a></li>
+                        <li><a class="color5" href="playerImage.html">PlayerImage</a></li>
+                        <li><a class="color6" href="contact.html">Contact</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+                <!--script-for-menu-->
+                <script>
+                    $("span.menu").click(function () {
+                        $(".top-menu").slideToggle("slow", function () {
+                            // Animation complete.
+                        });
+                    });
+                </script>
+                <!--script-for-menu-->
+            </div>
+        </div>
+    </div>
+    <!-- banner-bottom -->
+    <div class="banner">
+        <!-- Slider-starts-Here -->
+        <script src="js/responsiveslides.min.js"></script>
+        <script>
+            // You can also use "$(window).load(function() {"
+            $(function () {
+                // Slideshow 4
+                $("#slider3").responsiveSlides({
+                    auto: true,
+                    pager: true,
+                    nav: false,
+                    speed: 500,
+                    namespace: "callbacks",
+                    before: function () {
+                        $('.events').append("<li>before event fired.</li>");
+                    },
+                    after: function () {
+                        $('.events').append("<li>after event fired.</li>");
+                    }
+                });
+
+            });
+        </script>
+        <!--//End-slider-script -->
+        <div id="top" class="callbacks_container">
+            <ul class="rslides" id="slider3">
+                <li>
+                    <img class="img-responsive" src="images/1.png" alt="">
+                </li>
+                <li>
+                    <img class="img-responsive" src="images/2.png" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--latest-post-->
+<!--top-games-section-->
+<div class="top-games-section">
+    <div class="container">
+        <!--sreen-gallery-cursual-->
+        <div class="col-md-3 top-games">
+            <h3>Player BEST!</h3>
+            <p>最受欢迎球员照片轮播</p>
+            <p>你将会看到在CBA战场深受观众喜爱的球员！</p>
+        </div>
+        <div class="col-md-9 g-views">
+            <ul id="flexiselDemo3">
+                <li>
+                    <div class="biseller-column">
+                        <a class="lightbox" href="#goofy">
+                            <img src="images/player1.png"/>
+                        </a>
+                        <div class="lightbox-target" id="goofy">
+                            <img src="images/player1.png"/>
+                            <a class="lightbox-close" href="#"> </a>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="biseller-column">
+                        <a class="lightbox" href="#goofy">
+                            <img src="images/player1.png"/>
+                        </a>
+                        <div class="lightbox-target" id="goofy">
+                            <img src="images/player1.png"/>
+                            <a class="lightbox-close" href="#"> </a>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="biseller-column">
+                        <a class="lightbox" href="#goofy">
+                            <img src="images/player1.png"/>
+                        </a>
+                        <div class="lightbox-target" id="goofy">
+                            <img src="images/player1.png"/>
+                            <a class="lightbox-close" href="#"> </a>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="biseller-column">
+                        <a class="lightbox" href="#goofy">
+                            <img src="images/player1.png"/>
+                        </a>
+                        <div class="lightbox-target" id="goofy">
+                            <img src="images/player2.png"/>
+                            <a class="lightbox-close" href="#"> </a>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="biseller-column">
+                        <a class="lightbox" href="#goofy">
+                            <img src="images/player1.png"/>
+                        </a>
+                        <div class="lightbox-target" id="goofy">
+                            <img src="images/player1.png"/>
+                            <a class="lightbox-close" href="#"> </a>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <script type="text/javascript">
+                $(window).load(function () {
+                    $("#flexiselDemo3").flexisel({
+                        visibleItems: 3,
+                        animationSpeed: 1000,
+                        autoPlay: true,
+                        autoPlaySpeed: 3000,
+                        pauseOnHover: true,
+                        enableResponsiveBreakpoints: true,
+                        responsiveBreakpoints: {
+                            portrait: {
+                                changePoint: 480,
+                                visibleItems: 3
+                            },
+                            landscape: {
+                                changePoint: 640,
+                                visibleItems: 3
+                            },
+                            tablet: {
+                                changePoint: 768,
+                                visibleItems: 3
+                            }
+                        }
+                    });
+
+                });
+            </script>
+            <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+        </div>
+    </div>
+</div>
+
+<!--footer--->
+<div class="footer text-center">
+    <div class="container">
+        <div class="footer-grids">
+            <div class="col-md-7 footer-info">
+                <a href="https://www.cbaleague.com/#/"><h3>Get In CBA</h3></a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

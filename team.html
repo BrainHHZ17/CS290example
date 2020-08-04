@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Team</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Jolly Games Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!--webfonts-->
+    <link href='http://fonts.useso.com/css?family=Fugaz+One|Raleway:400,100,200,300,500,600,700,800,900'
+          rel='stylesheet' type='text/css'>
+    <!--//webfonts-->
+	<style type="text/css">
+		.choice input[type="submit"]{
+			background:#5bb2fc;
+			cursor: pointer;
+			border: 0;
+			color: #fff;
+			font-weight: 400;
+			font-size: 15px;
+			text-transform: uppercase;
+			padding: 0.88em;
+			text-align: center;
+			webkit-appearance:none;
+			outline:none;
+		}
+		.choice input[type="submit"]:hover{
+			background:#fec63f;
+		}
+	</style>
+</head>
+<body>
+<!--start-home-->
+<div id="home" class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="head-nav">
+                <div class="logo">
+					<a href="index.html"><h1>CBA<span>Team</span></h1></a>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="clearfix"></div>
+                <span class="menu"></span>
+                <div class="top-menu">
+                    <ul>
+                        <li class="active"><a class="color1" href="index.html">Home</a></li>
+                        <li><a class="color2" href="team.html">Team</a></li>
+                        <li><a class="color5" href="playerImage.html">PlayerImage</a></li>
+                        <li><a class="color6" href="contact.html">Contact</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+                <!--script-for-menu-->
+                <script>
+                    $("span.menu").click(function () {
+                        $(".top-menu").slideToggle("slow", function () {
+                            // Animation complete.
+                        });
+                    });
+                </script>
+                <!--script-for-menu-->
+            </div>
+        </div>
+    </div>
+    <!-- banner-bottom -->
+</div>
+<!--about-->
+<div class="about">
+    <div class="container">
+        <h3>WHO IS THE BEST PLAYER</h3>
+        <div class="about-top">
+            <div class="col-md-7 about-pic">
+                <img src="images/gal.jpg"/>
+            </div>
+            <div class="col-md-5 about-text">
+				<div class="votechoice">
+					<ul class="vote1">
+						<p>Is that him? Votes= <label id="votesGal"></label></p>
+						<li><input type="radio" name="radioOnly" id="gal" value="gal" /><span class="votechoicename">yes</span></li>
+<!--						<li><input type="radio" name="radioOnly" value="no" /><span class="votechoicename">no</span></li>-->
+					</ul>
+				</div>
+            </div>
+			<div class="choice">
+				<input type="submit" onclick="choice(1)" value="SUBSCRIBE" class="botton">
+			</div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="about-top">
+            <div class="col-md-7 about-pic">
+                <img src="images/Jeremy.jpg"/>
+            </div>
+            <div class="col-md-5 about-text">
+				<div class="votechoice">
+					<ul class="vote1">
+						<p>Is that him? Votes= <label id="votesJeremy"></label></p>
+						<li><input type="radio" name="radioOnly" id="jeremy" value="jeremy" /><span class="votechoicename">yes</span></li>
+<!--						<li><input type="radio" name="radioOnly" value="no" /><span class="votechoicename">no</span></li>-->
+					</ul>
+				</div>
+            </div>
+			<div class="choice">
+				<input type="submit" onclick="choice(2)" value="SUBSCRIBE" class="botton">
+			</div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="about-top">
+            <div class="col-md-7 about-pic">
+                <img src="images/xd.jpg"/>
+            </div>
+            <div class="col-md-5 about-text">
+				<div class="votechoice">
+					<ul class="vote1">
+						<p>Is that him? Votes= <label id="votesxd"></label></p>
+						<li><input type="radio" name="radioOnly" id="xd" value="xd" /><span class="votechoicename">yes</span></li>
+<!--						<li><input type="radio" name="radioOnly" value="no" /><span class="votechoicename">no</span></li>-->
+					</ul>
+				</div>
+            </div>
+			<div class="choice">
+				<input type="submit" onclick="choice(3)" value="SUBSCRIBE" class="botton">
+			</div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+</div>
+<!--footer--->
+<div class="footer text-center">
+	<div class="container">
+		<div class="footer-grids">
+			<div class="col-md-7 footer-info">
+				<a href="https://www.cbaleague.com/#/"><h3>Get In CBA</h3></a>
+			</div>
+		</div>
+	</div>
+</div>
+<!--start-smoth-scrolling-->
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+        });
+    });
+</script>
+<!--start-smoth-scrolling-->
+<script type="text/javascript">
+    var num1 = 0;
+    var num2 = 0;
+    var num3 = 0;
+    function choice(who) {
+    	var choi  = document.getElementsByName("radioOnly");
+    	var name = '';
+    	var nameValue;
+		for(var i=0;i<choi.length;i++){
+			if(choi[i].checked) {
+				name = choi[i].value
+			}
+		}
+		if(who === 1){
+			if(name === 'gal') {
+				num1++;
+				document.getElementById("votesGal").innerText = num1;
+				nameValue = num1;
+			}
+		}else if(who === 2){
+			if(name === 'jeremy') {
+				num2++;
+				document.getElementById("votesJeremy").innerText = num2;
+				nameValue = num3;
+			}
+		}else if(who === 3){
+			if(name === 'xd') {
+				num3++;
+				document.getElementById("votesxd").innerText = num3;
+				nameValue = num3;
+			}
+		}
+		$.ajax({
+			url:"http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php",    //请求的url地址
+			dataType:"json",   //返回格式为json
+			async:true,//请求是否异步，默认为异步，这也是ajax重要特性
+			data:{
+				"name":name,
+				"num":nameValue
+			},    //参数值
+			type:"POST",   //请求方式
+			beforeSend:function(){
+				//请求前的处理
+			},
+			success:function(req){
+				//请求成功时处理
+				alert("submit success!");
+				alert(req);
+			},
+			complete:function(){
+				//请求完成的处理
+			},
+			error:function(){
+				//请求出错处理
+			}
+		});
+	}
+</script>
+<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover"
+                                                                         style="opacity: 1;"> </span></a>
+
+</body>
+</html>
